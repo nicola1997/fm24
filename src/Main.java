@@ -6,10 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Stadio> stadi= new ArrayList<>();
-        stadi.add(new Stadio("Olimpico",90000,30,3));
 
-        Squadra s = new Squadra("Inter",stadi.get(0));
-        System.out.println(s);
+
+       Lega l= new Lega("serieA",anno);
+       System.out.println(l);
     }
 }

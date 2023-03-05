@@ -27,7 +27,14 @@ public class Squadra {
         this.valore = getValore();
         this.stipendi = getStipendi();
         this.stadio = stadio;
-        this.serieA = serieA;
+
+        setSquadraGiocatore();
+
+    }
+    public void setSquadraGiocatore(){
+        for(int i=0;i<rosa.size();i++){
+            rosa.get(i).setSquadre(getNome());
+        }
     }
 
     public ArrayList<Calciatore> getRosa() {

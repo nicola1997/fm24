@@ -57,8 +57,8 @@ public class Calciatore {
         return squadre;
     }
 
-    public void setSquadre(HashMap<Integer, String> squadre) {
-        this.squadre = squadre;
+    public void setSquadre(String squadra) {
+        this.squadre.put(Main.anno,squadra);
     }
 
     public HashMap<Integer, Integer> getPrezzo() {
